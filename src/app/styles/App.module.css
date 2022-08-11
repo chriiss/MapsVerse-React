@@ -1,0 +1,45 @@
+:root {
+    --space: 1rem;
+}
+
+.map {
+    width: 100vw;
+    height:100vh;
+    z-index: 0;
+}
+
+.searchBoxBloc {
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    padding-top: calc(var(--space) / 2);
+    padding-bottom: calc(var(--space) / 2);
+    width: 100vw;
+}
+
+.searchBoxBloc_inputText {
+    width: 90%;
+}
+svg {
+    margin-top: 10px;
+}
+
+.listItem {
+    cursor: pointer;
+}
+.location {
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 7rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: none;
+    background-color: rgb(30, 96, 250);
+}
