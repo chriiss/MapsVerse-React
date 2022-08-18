@@ -3,7 +3,6 @@ import ListElement from "./listElement/ListElement";
 import Styles from "../../styles/App.module.css";
 import SearchIcon from './searchIcon/SearchIcon';
 import { Box, TextField, Button } from '@mui/material';
-import { useMap } from 'react-leaflet';
 
 
 
