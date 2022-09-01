@@ -34,7 +34,7 @@ const Maps = (props) => {
             <MapContainer center={position} zoom={6} scrollWheelZoom={true} zoomControl={false} className={Styles.map} whenCreated={setMap}>
                 <TileLayer
                     attribution='© OpenStreetMap contributors'
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    url="https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGlpYW15ZXMiLCJhIjoiY2lnZjBla2M1NjVuY3Zna3JvcTBqZDl1YyJ9.t7CASOZkWcnnPc6aPI7M0w"
                 />
                 {selectPosition && (
                     <Marker position={locationPosition} icon={icon}>

@@ -14,7 +14,7 @@ const createRoutineMachineLayer = (props) => {
     lineOptions: {
       styles: [{ color: "rgb(30, 96, 250)", weight: 4 }]
     },
-    show: true,
+    show: false,
     collapsible: true,
     routeWhileDragging: true,
     router: new L.Routing.osrmv1({
