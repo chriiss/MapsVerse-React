@@ -8,8 +8,8 @@ import L from 'leaflet';
 const Location = () => {
     const [position, setPosition] = useState(null);
     const icon = L.icon({
-        "iconUrl": require("../../../assets/marker_location.png"),
-        "iconSize": [42,38]
+        "iconUrl": require("../../../assets/location_icon.png"),
+        "iconSize": [25,25]
     });
 
     const map = useMapEvents({
