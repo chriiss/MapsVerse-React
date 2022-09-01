@@ -2,7 +2,7 @@ import React, {useEffect, useState, useRef} from 'react';
 import AnimateView from './animateView/AnimateView';
 import Location from './location/Location';
 import RoutingMachine from './routingMachine/RoutingMachine';
-import { MapContainer, TileLayer, Marker, Popup, ZoomControl } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, ZoomControl, ScaleControl } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import Styles from '../../styles/App.module.css';
 import L from 'leaflet';
@@ -34,7 +34,7 @@ const Maps = (props) => {
             <MapContainer center={position} zoom={6} scrollWheelZoom={true} zoomControl={false} className={Styles.map} whenCreated={setMap}>
                 <TileLayer
                     attribution='© OpenStreetMap contributors'
-                    url="https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaGlpYW15ZXMiLCJhIjoiY2lnZjBla2M1NjVuY3Zna3JvcTBqZDl1YyJ9.t7CASOZkWcnnPc6aPI7M0w"
+                    url="//mt.google.com/vt/lyrs=m&x={x}&y={y}&z={z}"
                 />
                 {selectPosition && (
                     <Marker position={locationPosition} icon={icon}>
@@ -44,6 +44,7 @@ const Maps = (props) => {
                     </Marker>
                 )}
                 <ZoomControl position="bottomright" />
+                <ScaleControl position="bottomleft" />
                 <Location />
                 <AnimateView selectPosition={selectPosition}/>
                 <RoutingMachine ref={routingMachineRef} />
