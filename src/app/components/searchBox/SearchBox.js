@@ -7,7 +7,7 @@ import { Box, TextField, Button } from '@mui/material';
 
 
 const SearchBox = (props) => {
-    const {selectPosition, setSelectPosition} = props;
+    const { setSelectPosition } = props;
     const [query, setQuery] = useState("");
     const baseUrl = "https://nominatim.openstreetmap.org/search?";
     const [listPlace, setListPlace] = useState([]);
