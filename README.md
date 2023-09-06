@@ -1,4 +1,4 @@
-Project Link : https://dazzling-genie-f924d0.netlify.app/
+Project Link : https://mapsverse.netlify.app
 
 # Install project
 
